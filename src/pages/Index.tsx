@@ -54,7 +54,7 @@ const Index = () => {
               </div>
 
               <iframe
-                src="https://rtsp.me/embed/tNc6XcfT/"
+                src="https://rtsp.ru/embed/6ZZB8HBi/"
                 className="absolute inset-0 w-full h-full"
                 frameBorder="0"
                 allowFullScreen
