@@ -40,9 +40,7 @@ const Index = () => {
               alt="LiveStream Logo" 
               className="w-10 h-10 rounded-xl object-cover"
             />
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              LiveStream
-            </h1>
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">КМК</h1>
           </div>
           <div className="flex items-center gap-6">
             <Link to="/" className="text-foreground hover:text-primary transition-colors">
