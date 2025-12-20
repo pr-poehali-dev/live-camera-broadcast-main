@@ -1,16 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
 import { Link } from 'react-router-dom';
 
 const Index = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [isMuted, setIsMuted] = useState(false);
-  const [volume, setVolume] = useState(70);
-  const [quality, setQuality] = useState('1080p');
-  const [isFullscreen, setIsFullscreen] = useState(false);
   const [viewersCount, setViewersCount] = useState(1247);
 
   useEffect(() => {
@@ -19,16 +13,6 @@ const Index = () => {
     }, 3000);
     return () => clearInterval(interval);
   }, []);
-
-  const toggleFullscreen = () => {
-    if (!document.fullscreenElement) {
-      document.documentElement.requestFullscreen();
-      setIsFullscreen(true);
-    } else {
-      document.exitFullscreen();
-      setIsFullscreen(false);
-    }
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-card">
@@ -76,59 +60,6 @@ const Index = () => {
                 allowFullScreen
                 title="Онлайн камера"
               />
-
-              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="flex items-center justify-between gap-4">
-                  <div className="flex items-center gap-3">
-                    <Button
-                      size="icon"
-                      variant="ghost"
-                      className="text-white hover:bg-white/20"
-                      onClick={() => setIsPlaying(!isPlaying)}
-                    >
-                      <Icon name={isPlaying ? 'Pause' : 'Play'} size={24} />
-                    </Button>
-                    <Button
-                      size="icon"
-                      variant="ghost"
-                      className="text-white hover:bg-white/20"
-                      onClick={() => setIsMuted(!isMuted)}
-                    >
-                      <Icon name={isMuted ? 'VolumeX' : 'Volume2'} size={24} />
-                    </Button>
-                    <input
-                      type="range"
-                      min="0"
-                      max="100"
-                      value={volume}
-                      onChange={(e) => setVolume(Number(e.target.value))}
-                      className="w-24 accent-primary"
-                    />
-                    <span className="text-white text-sm font-medium">{volume}%</span>
-                  </div>
-
-                  <div className="flex items-center gap-3">
-                    <select
-                      value={quality}
-                      onChange={(e) => setQuality(e.target.value)}
-                      className="bg-white/20 text-white px-3 py-1 rounded-lg border-none outline-none"
-                    >
-                      <option value="1080p">1080p</option>
-                      <option value="720p">720p</option>
-                      <option value="480p">480p</option>
-                      <option value="360p">360p</option>
-                    </select>
-                    <Button
-                      size="icon"
-                      variant="ghost"
-                      className="text-white hover:bg-white/20"
-                      onClick={toggleFullscreen}
-                    >
-                      <Icon name={isFullscreen ? 'Minimize' : 'Maximize'} size={24} />
-                    </Button>
-                  </div>
-                </div>
-              </div>
             </div>
           </Card>
 
