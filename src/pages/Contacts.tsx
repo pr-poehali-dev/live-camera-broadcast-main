@@ -30,9 +30,11 @@ const Contacts = () => {
       <nav className="border-b border-border bg-background/80 backdrop-blur-lg sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-              <Icon name="Radio" size={24} className="text-white" />
-            </div>
+            <img 
+              src="https://cdn.poehali.dev/projects/3614cde0-dd9f-4513-b368-7df4e2c876af/files/02d24983-bcdf-46a9-b980-f1c60c0c8842.jpg" 
+              alt="LiveStream Logo" 
+              className="w-10 h-10 rounded-xl object-cover"
+            />
             <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               LiveStream
             </h1>
