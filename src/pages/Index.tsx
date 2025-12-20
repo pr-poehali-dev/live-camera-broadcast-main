@@ -63,30 +63,7 @@ const Index = () => {
             </div>
           </Card>
 
-          <Card className="p-6 bg-card border-border">
-            <div className="flex items-start gap-4">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                <Icon name="Tv" size={32} className="text-white" />
-              </div>
-              <div className="flex-1">
-                <h2 className="text-2xl font-bold mb-2">Прямой эфир: Технологии будущего</h2>
-                <p className="text-muted-foreground mb-4">
-                  Присоединяйтесь к нашей прямой трансляции и обсуждайте самые актуальные темы вместе с тысячами зрителей онлайн!
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline" className="border-primary text-primary">
-                    #прямойэфир
-                  </Badge>
-                  <Badge variant="outline" className="border-secondary text-secondary">
-                    #технологии
-                  </Badge>
-                  <Badge variant="outline" className="border-accent text-accent">
-                    #онлайн
-                  </Badge>
-                </div>
-              </div>
-            </div>
-          </Card>
+
         </div>
       </div>
     </div>
