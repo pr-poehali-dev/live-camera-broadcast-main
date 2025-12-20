@@ -69,11 +69,13 @@ const Index = () => {
                 </Badge>
               </div>
 
-              <div className="relative z-10 text-center">
-                <Icon name="Video" size={80} className="text-white/60 mx-auto mb-4" />
-                <p className="text-white/80 text-lg">Онлайн трансляция</p>
-                <p className="text-white/60 text-sm mt-2">Демо-режим: подключите источник видео</p>
-              </div>
+              <iframe
+                src="https://rtsp.me/embed/tNc6XcfT/"
+                className="absolute inset-0 w-full h-full"
+                frameBorder="0"
+                allowFullScreen
+                title="Онлайн камера"
+              />
 
               <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="flex items-center justify-between gap-4">
