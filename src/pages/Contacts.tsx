@@ -31,13 +31,10 @@ const Contacts = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img 
-              src="https://cdn.poehali.dev/projects/3614cde0-dd9f-4513-b368-7df4e2c876af/files/02d24983-bcdf-46a9-b980-f1c60c0c8842.jpg" 
-              alt="LiveStream Logo" 
-              className="w-10 h-10 rounded-xl object-cover"
+              src="https://cdn.poehali.dev/files/3491302.png" 
+              alt="КМК Логотип" 
+              className="h-12 w-auto object-contain"
             />
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              LiveStream
-            </h1>
           </div>
           <div className="flex items-center gap-6">
             <Link to="/" className="text-foreground hover:text-primary transition-colors">
