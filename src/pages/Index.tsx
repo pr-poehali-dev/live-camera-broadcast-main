@@ -33,7 +33,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-card">
       <nav className="border-b border-border bg-background/80 backdrop-blur-lg sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between rounded-none bg-gray-400">
           <div className="flex items-center gap-3">
             <img 
               src="https://cdn.poehali.dev/files/3491302.png" 
