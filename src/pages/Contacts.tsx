@@ -80,8 +80,8 @@ const Contacts = () => {
               </div>
               <h3 className="font-bold text-lg mb-2">Телефон</h3>
               <p className="text-muted-foreground text-sm mb-3">Звоните в любое время</p>
-              <a href="tel:+79991234567" className="text-primary hover:text-secondary transition-colors">
-                +7 (999) 123-45-67
+              <a href="tel:+74912202333" className="text-primary hover:text-secondary transition-colors">
+                +7 4912 202-333
               </a>
             </Card>
 
