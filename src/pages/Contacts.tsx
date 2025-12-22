@@ -92,7 +92,7 @@ const Contacts = () => {
               <h3 className="font-bold text-lg mb-2">Адрес</h3>
               <p className="text-muted-foreground text-sm mb-3">Приходите к нам в офис</p>
               <p className="text-foreground">
-                г. Москва, ул. Примерная, д. 123
+                г. Рязань, ул. Ситниковская, д. 69а, офис 19
               </p>
             </Card>
           </div>
