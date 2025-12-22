@@ -1,18 +1,8 @@
-import { useState, useEffect } from 'react';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import Icon from '@/components/ui/icon';
 import { Link } from 'react-router-dom';
 
 const Index = () => {
-  const [viewersCount, setViewersCount] = useState(1247);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setViewersCount(prev => prev + Math.floor(Math.random() * 10) - 4);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-card">
@@ -32,11 +22,6 @@ const Index = () => {
             <Link to="/contacts" className="text-foreground hover:text-primary transition-colors">
               Контакты
             </Link>
-            <Badge variant="secondary" className="gap-2 px-4 py-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              <span className="font-semibold">{viewersCount.toLocaleString()}</span>
-              <span className="text-muted-foreground">онлайн</span>
-            </Badge>
           </div>
         </div>
       </nav>
