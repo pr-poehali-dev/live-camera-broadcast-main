@@ -69,8 +69,8 @@ const Contacts = () => {
               </div>
               <h3 className="font-bold text-lg mb-2">Email</h3>
               <p className="text-muted-foreground text-sm mb-3">Пишите нам на почту</p>
-              <a href="mailto:info@livestream.com" className="text-primary hover:text-secondary transition-colors">
-                info@livestream.com
+              <a href="mailto:mvm.rzn@yandex.ru" className="text-primary hover:text-secondary transition-colors">
+                mvm.rzn@yandex.ru
               </a>
             </Card>
 
