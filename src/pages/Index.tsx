@@ -53,7 +53,7 @@ const Index = () => {
 
           <Card className="overflow-hidden bg-card border-border shadow-2xl">
             <div className="p-4 border-b border-border">
-              <h2 className="text-xl font-bold text-foreground">Камера 2 - Территория</h2>
+              <h2 className="text-xl font-bold text-foreground">р. Рожайка КМК Cam 2</h2>
             </div>
             <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center group">
               <div className="absolute inset-0 bg-black/40" />
