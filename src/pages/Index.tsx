@@ -30,7 +30,7 @@ const Index = () => {
         <div className="max-w-5xl mx-auto space-y-6">
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold text-foreground mb-2">Онлайн трансляция</h1>
-            <p className="text-muted-foreground text-lg">Наблюдайте за объектом в режиме реального времени</p>
+            <p className="text-muted-foreground text-lg">Наблюдайте за объектами ООО "КМК" в режиме реального времени</p>
           </div>
           
           <Card className="overflow-hidden bg-card border-border shadow-2xl">
