@@ -48,6 +48,25 @@ const Index = () => {
             </div>
           </Card>
 
+          <Card className="overflow-hidden bg-card border-border shadow-2xl">
+            <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center group">
+              <div className="absolute inset-0 bg-black/40" />
+              <div className="absolute top-4 left-4 z-10">
+                <Badge className="bg-red-600 text-white gap-2 px-3 py-1.5">
+                  <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
+                  <span className="font-semibold">В ЭФИРЕ</span>
+                </Badge>
+              </div>
+
+              <iframe
+                src="https://rtsp.ru/embed/6ZZB8HBi/"
+                className="absolute inset-0 w-full h-full"
+                frameBorder="0"
+                allowFullScreen
+                title="Онлайн камера 2"
+              />
+            </div>
+          </Card>
 
         </div>
       </div>
