@@ -27,8 +27,11 @@ const Index = () => {
       </nav>
 
       <div className="container mx-auto px-4 py-8">
-        <div className="max-w-5xl mx-auto space-y-4">
+        <div className="max-w-5xl mx-auto space-y-6">
           <Card className="overflow-hidden bg-card border-border shadow-2xl">
+            <div className="p-4 border-b border-border">
+              <h2 className="text-xl font-bold text-foreground">Камера 1 - Въезд</h2>
+            </div>
             <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center group">
               <div className="absolute inset-0 bg-black/40" />
               <div className="absolute top-4 left-4 z-10">
@@ -49,6 +52,9 @@ const Index = () => {
           </Card>
 
           <Card className="overflow-hidden bg-card border-border shadow-2xl">
+            <div className="p-4 border-b border-border">
+              <h2 className="text-xl font-bold text-foreground">Камера 2 - Территория</h2>
+            </div>
             <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center group">
               <div className="absolute inset-0 bg-black/40" />
               <div className="absolute top-4 left-4 z-10">
